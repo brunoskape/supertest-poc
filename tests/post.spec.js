@@ -4,19 +4,13 @@ const expect = require('chai').expect;
 
 
 describe('ServRest Cenários', () => {
-    it('List all users', (done) => {
-      request('https://serverest.dev')
-        .get('/usuarios')
-        .expect(200,done)
-
-})
-
+    
     it('Create User', () => {
         request('https://serverest.dev')
          .post('/usuarios')
          .send({
             "nome": "Bruno Test",
-            "email": "brunootest@qa.com.br",
+            "email": "brunootestt@qa.com.br",
             "password": "teste",
             "administrador": "true"
           })
